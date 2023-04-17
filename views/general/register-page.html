@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style-register-page.css">
-    <title>Document</title>
+    <title> Resume Adapter Template | Register User </title>
 </head>
-<body>
+<body class="transition">
     <div class="general-container">
         <a class="logo" href="index.html"></a>
-        <form action="" method="get">
+        <form action="home-page.html" method="get">
             <div class="input-container">
                 <div class="input">
-                    <input type="text" name="username" id="username" placeholder="Username">
+                    <input class="username-input" type="text" name="username" id="username" placeholder="Username">
                 </div>
                 <div class="input">
-                    <input type="password" name="password" id="password" placeholder="Password">
+                    <input class="password-input" type="password" name="password" id="password" placeholder="Password">
                 </div>
                 <div class="input">
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input class="email-input" type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="selector">
+                    <label for="student">Student</label>
+                    <input type="radio" id="student" name="profesion" value="student">
+                </div>
+                <div class="selector">
+                    <label for="professional">Professional</label>
+                    <input type="radio" id="professional" name="profesion" value="professional">
+                </div>
+                <div class="selector">
+                    <label class="option-other" for="other">Other</label>
+                    <input type="radio" id="other" name="profesion" value="other">
                 </div>
                 <div class="button">
                     <button class="register-button" type="submit"> Register ></button>

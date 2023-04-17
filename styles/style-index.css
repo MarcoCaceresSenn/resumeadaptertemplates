@@ -7,6 +7,18 @@ body{
     background-image: url(../static/images/background.png);
     background-repeat: no-repeat;
 }
+/*---------------|Page transition|--------------------*/
+/* Define una animación de transición */
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  
+/* Aplica la animación a los elementos */
+.transition {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
 .general-container{
     width: 100vw;
     height: 100vh;
