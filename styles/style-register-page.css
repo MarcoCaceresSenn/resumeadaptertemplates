@@ -60,7 +60,7 @@ body{
     color: #f2f2f2;
     font-size: 18px;
 }
-input[type="text"] {
+input[type="text"], input[type="email"] {
     color: #f2f2f2;
     padding-right: 10%;
 }
@@ -81,11 +81,11 @@ a{
     text-decoration: underline;
     color: #000000;
 }
-.login-button{
+.register-button{
     transition: 0.3s;
     background-color: #3F8EBF;
     color: #f2f2f2;
-    margin-left: 60%;
+    margin-left: 95%;
     border: none;
     width: 7vw;
     height: 5vh;
@@ -93,19 +93,8 @@ a{
     font-size: 18px;
     box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.2);
 }
-.login-button:hover{
+.register-button:hover{
     transition: 0.3s;
     background-color: #2F6B9F;
     box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.3);
-}
-.register-button{
-    transition: 0.3s;
-    margin-left: 22%;
-    margin-top: 8%;
-    border: none;
-    font-size: 18px;
-}
-.register-button:hover{
-    transition: 0.1s;
-    color: #f2f2f2;
 }
