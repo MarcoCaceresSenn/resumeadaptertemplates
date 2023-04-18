@@ -1,101 +1,87 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "OwnRoboto";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/* Imported font*/
-@font-face {
-  font-family: "OwnRoboto";
-  src: url("../static/font/Roboto-Bold.ttf");
-  font-style: normal;
-}
-body {
-  background-image: url(../static/images/background.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
+body{
+    background-image: url(../static/images/background.png);
+    background-repeat: no-repeat;
 }
 /*---------------|Page transition|--------------------*/
 /* Define una animación de transición */
 @keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
-
+  
 /* Aplica la animación a los elementos */
 .transition {
-  animation-name: fade;
-  animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
 }
-.general-container {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1.5fr 2fr;
+.general-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
-.display-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.display-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-h1 {
-  font-size: 100px;
-  text-shadow: 0 3px 10px #2f2f2f;
+h1{
+    font-size: 100px;
+    text-shadow: 0 3px 10px #2f2f2f;
 }
-p {
-  color: #68748c;
-  font-size: 30px;
+p{
+    color: #68748C;
+    font-size: 30px;
 }
-.description,
-.title,
-.container-buttons {
-  margin: 0 0 0 25%;
+.description, .title, .container-buttons{
+    margin: 0 0 0 25%;
 }
-.container-buttons {
-  display: flex;
-  font-size: 20px;
-  margin-top: 5%;
+.container-buttons{
+    display: flex;
+    font-size: 20px;
+    margin-top: 5%;
 }
-.guest-button a {
-  text-decoration: none;
-  color: black;
+.guest-button a{
+    text-decoration: none;
+    color: black;
 }
-.login-button a {
-  text-decoration: none;
-  color: #f2f2f2;
+.login-button a{
+    text-decoration: none;
+    color: #f2f2f2;
 }
-.login-button {
-  transition: 0.3s;
-  height: 70%;
-  width: 20%;
-  border-radius: 25px;
-  padding-top: 3%;
-  padding-left: 7%;
-  background-color: #68748c;
-  margin-left: 20%;
-  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.2);
+.login-button{
+    transition: 0.3s;
+    height: 4.5vh;
+    width: 5vw;
+    border-radius: 25px;
+    padding-top: 3%;
+    padding-left: 7%;
+    background-color: #68748C;
+    margin-left: 20%;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.2);
 }
-.login-button:hover {
-  transition: 0.3s;
-  background-color: #424a59;
-  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.3);
+.login-button:hover{
+    transition: 0.3s;
+    background-color: #424A59;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.3);
 }
-.guest-button {
-  transition: 0.3s;
-  text-decoration: underline;
-  margin-top: 3%;
+.guest-button{
+    transition: 0.3s;
+    text-decoration: underline;
+    margin-top: 3%;
 }
-.guest-button:hover {
-  transition: 0.3s;
-  color: #f2f2f2;
+.guest-button:hover{
+    transition: 0.3s;
+    color: #f2f2f2;
 }
-.logo {
-  background-image: url(../static/images/logos/logo1.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin-left: 10%;
-  margin-top: 5%;
+.logo{
+    background-image: url(../static/images/logos/logo1.png);
+    background-repeat: no-repeat;
+    margin-left: 10%;
+    margin-top: 5%;
 }
