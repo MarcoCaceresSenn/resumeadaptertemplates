@@ -142,23 +142,38 @@ input[type="radio"] {
 /*---------------|Buttons|--------------*/
 
 .buttons {
-  display: flex;
-  margin-left: 5%;
+  margin-top: 3%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-left: 20%;
+  width: 50%;
 }
 a {
   text-decoration: underline;
   color: #000000;
 }
+.go-back-button{
+  transition: color 0.3s ease-in-out;
+  height: 70%;
+  width: 20%;
+  padding-top: 3%;
+  padding-left: 7%;
+  margin-left: 20%;
+}
+.go-back-button:hover{
+  color: #f2f2f2;
+}
+
 .register-button {
   transition: 0.3s;
   background-color: #3f8ebf;
   color: #f2f2f2;
-  margin-left: 95%;
-  margin-top: 10%;
+  margin-left: 20%;
   border: none;
-  width: 7vw;
-  height: 5vh;
-  border-radius: 80px;
+  width: 50%;
+  height: 120%;
+  border-radius: 30px;
   font-size: 18px;
   box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.2);
 }
