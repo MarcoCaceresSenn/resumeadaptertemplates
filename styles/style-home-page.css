@@ -1,27 +1,74 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'OwnRoboto';
-  }
-  /* Imported font*/
-  @font-face {
-      font-family: 'OwnRoboto';
-      src: url('../static/font/Roboto-Bold.ttf');
-      font-style: normal;
-  }
-body{
-    background-image: url(../static/images/background.png);
-    background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: "OwnRoboto";
+}
+/* Imported font*/
+@font-face {
+  font-family: "OwnRoboto";
+  src: url("../static/font/Roboto-Bold.ttf");
+  font-style: normal;
+}
+body {
+  background-image: url(../static/images/background.png);
+  background-repeat: no-repeat;
 }
 /*---------------|Page transition|--------------------*/
 /* Define una animación de transición */
 @keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-  
+
 /* Aplica la animación a los elementos */
 .transition {
-    animation-name: fade;
-    animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+/* ----------------| NAV |--------------------------*/
+#mainNavigation a {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-menu {
+  background: #03727d;
+}
+a.dropdown-toggle {
+  color: #dfdfdf !important;
+}
+a.dropdown-item:hover {
+  color: #03727d !important;
+}
+.nav-item a {
+  color: #000000;
+}
+.nav-item a:hover {
+  color: #fff;
+}
+.nav-item {
+  min-width: 12vw;
+}
+#mainNavigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 123;
+  padding-bottom: 120px;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%); 
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom,  rgba(0, 0, 0, 0.2) 0%,rgba(0,0,0,0) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); 
+  }
+#navbarNavDropdown.collapsing .navbar-nav,
+#navbarNavDropdown.show .navbar-nav {
+  background: #037582;
+  padding: 12px;
 }
