@@ -1,161 +1,30 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "OwnRoboto";
+  transition: all .5s ease-in-out;
 }
-/* Imported font*/
-@font-face {
-  font-family: "OwnRoboto";
-  src: url("../static/font/Roboto-Bold.ttf");
-  font-style: normal;
+
+
+
+#login-form input{
+  border-style: hidden;
 }
-body {
-  background-image: url(../static/images/background2.png);
-  background-repeat: no-repeat;
-  
+
+#login-form input:hover{
+  background-color: #535353 !important;
 }
-/*---------------|Page transition|--------------------*/
-/* Define una animación de transición */
-@keyframes fade {
-  from {
-    opacity: 0;
+#login-form .btn:hover{
+  background-color: #535353 !important;
+  color: #FFFFFF;
   }
-  to {
-    opacity: 1;
-  }
+
+::placeholder{
+  color: #FFFFFF !important;
+  opacity: 0.5 !important;
+  font-weight: lighter;
 }
 
-/* Aplica la animación a los elementos */
-.transition {
-  animation-name: fade;
-  animation-duration: 0.5s;
-}
-/*---------------|container|-------------------*/
-.general-container {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
-}
-.display-container{
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-/*---------------|Logo|-------------------*/
-.logo {
-  
-}
-.container-logo:hover {
-  opacity: 1;
-}
-.container-logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.8;
-  transition: opacity 0.3s ease-in-out;
-}
-.container-logo img{
-  
-}
-/*---------|inputs|-----------*/
-.input-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+label{
+  color: #535353;
 }
 
-.input-container input {
-  background-color: #62768c;
-  font-size: 18px;
-  border: none;
-  width: 170%;
-  height: 5vh;
-  padding-left: 30%;
-  border-radius: 80px;
-  transition: background-color 0.3s ease-in-out;
-}
-.input {
-  margin-bottom: 2%;
-}
-::placeholder {
-  opacity: 0.7;
-  color: #f2f2f2;
-  font-size: 18px;
-}
-input[type="text"] {
-  color: #f2f2f2;
-  padding-right: 10%;
-}
-input[type="password"] {
-  padding-right: 10%;
-}
-input:focus {
-  outline: none;
-}
-input:hover {
-  background-color: #3c4855;
-}
-.username-input {
-  background-image: url(../static/images/icons/user-icon.png);
-  background-repeat: no-repeat;
-  background-position: 5%;
-  background-size: 6%;
-}
-.password-input {
-  background-image: url(../static/images/icons/lock-icon.png);
-  background-repeat: no-repeat;
-  background-position: 5%;
-  background-size: 6%;
-}
-
-/*---------------|Buttons|--------------*/
-
-.buttons {
-  display: flex;
-  justify-content: space-evenly;
-}
-a {
-  text-decoration: underline;
-  color: #000000;
-}
-.login-button {
-  transition: 0.3s;
-  background-color: #3f8ebf;
-  color: #f2f2f2;
-  border: none;
-  width: 7vw;
-  height: 5vh;
-  border-radius: 80px;
-  font-size: 18px;
-  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.2);
-}
-.login-button:hover {
-  cursor: pointer;
-  transition: 0.3s;
-  background-color: #2f6b9f;
-  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.3);
-}
-.register-button {
-  transition: 0.3s;
-  margin-top: 4%;
-  margin-left: 20%;
-  border: none;
-  font-size: 18px;
-}
-.register-button:hover {
-  transition: 0.1s;
-  color: #f2f2f2;
-}
-.go-back-button {
-  transition: 0.3s;
-  margin-top: 4%;
-  margin-left: 55%;
-  border: none;
-  font-size: 18px;
-}
-.go-back-button:hover {
-  transition: 0.1s;
-  color: #f2f2f2;
-}
