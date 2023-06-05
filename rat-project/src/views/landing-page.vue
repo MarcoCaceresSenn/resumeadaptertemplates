@@ -49,10 +49,10 @@
     export default {
         methods: {
             goToLoginPage(){
-                this.$router.push('/login-page')
+                this.$router.push('/login')
             },
             goToHomePage(){
-                this.$router.push('/home-page')
+                this.$router.push('/home')
             }
         }
     }

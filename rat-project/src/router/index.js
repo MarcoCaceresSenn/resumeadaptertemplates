@@ -6,6 +6,16 @@ const routes = [
     path: '/',
     name: 'landing-page',
     component: LandingView
+  },
+  {
+    path: '/login',
+    name: 'login-page',
+    component: () => import('../views/login-page.vue')
+  },
+  {
+    path: '/home',
+    name: 'home-page',
+    component: () => import('../views/home-page.vue')
   }
 ]
 
