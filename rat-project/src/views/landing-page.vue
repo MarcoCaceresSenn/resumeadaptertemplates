@@ -2,30 +2,30 @@
     <div class="container-background">
         <div class="row">
             <div class="col-md-3">
-                <div class="d-flex flex-column justify-content-center gap-2 vh-100">
+                <div class="d-flex flex-column justify-content-center gap-4 vh-100">
                     <div class="row">
                         <div class="col-md-2"></div>
                         <div class="col-md-10">
-                            <h1 class="fw-bolder"> Resume</h1>
-                            <h1 class="fw-bolder"> Adapter</h1>
-                            <h1 class="fw-bolder"> Template</h1>
+                            <h1 class="fw-bolder display-4"><span class="font-shadow">R</span>esume</h1>
+                            <h1 class="fw-bolder display-4"><span class="font-shadow">A</span>dapter</h1>
+                            <h1 class="fw-bolder display-4"><span class="font-shadow">T</span>emplate</h1>
                         </div>
                     </div>
                     
                     <div class="row">
                         <div class="col-md-2"></div>
-                        <p class="col-md-10 text-muted">Enter your information and browse through the variety of designs we have for you
+                        <p class="col-md-10 fs-5 text-muted">Enter your information and browse through the variety of designs we have for you
                         </p>
                     </div>
 
                     <div class="row">
                         <div class="col-md-2"></div>
                         <div class="d-flex col-md-10 gap-3">
-                            <div class="btn btn-custom-guest">
-                                <a href="home-page.html">Login as guest</a>
+                            <div>
+                                <button class="btn btn-custom-guest" @click="goToHomePage" >Login as guest</button>
                             </div>
-                            <div class="btn btn-custom-login">
-                                <a href="login-page.html">Login ></a>
+                            <div >
+                                <button class="btn btn-custom-login" @click="goToLoginPage">Login ></button>
                             </div>
                         </div>
                     </div>
@@ -44,6 +44,20 @@
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        methods: {
+            goToLoginPage(){
+                this.$router.push('/login-page')
+            },
+            goToHomePage(){
+                this.$router.push('/home-page')
+            }
+        }
+    }
+</script>
+
 <style scoped>
     *{
         margin: 0;
@@ -76,21 +90,14 @@
         border-radius: 0.7rem; /* Radio de borde similar al botón primario */
         padding: 0.375rem 0.75rem; /* Espaciado interior del botón */
     }
-
-    .btn-custom-login a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    .btn-custom-login a:hover {
-        color: inherit;
-        text-decoration: none;
-    }
-    .btn-custom-guest a {
+    .btn-custom-guest{
         color: #62768C;
     }
-    .btn-custom-guest a:hover {
+    .btn-custom-guest:hover {
         color: #000000;
 
+    }
+    .font-shadow{
+        text-shadow: 0 2px 4px #62768C;
     }
 </style>
