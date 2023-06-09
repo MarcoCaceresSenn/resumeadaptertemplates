@@ -12,7 +12,7 @@ $(document).ready(function() {
   
     // Loop through the images and add them to the carousel
     for (var i = 0; i < images.length; i++) {
-      var image = $('<div class="carousel-item"><img src="/static/templates/' + images[i] + '" alt="Slide ' + (i + 1) + '" class="d-block w-100 img-fluid" width="310"></div>');
+      var image = $('<div class="carousel-item"><a href="create-cv.html"><img src="/static/templates/' + images[i] + '" alt="Slide ' + (i + 1) + '" class="d-block w-100 img-fluid" width="310"></a></div>');
       if (i === 0) {
         image.addClass('active');
       }
