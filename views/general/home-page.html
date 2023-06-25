@@ -12,62 +12,63 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title> Resume Adapter Template | Home </title>
 </head>
-<body class="transition">
-        <div id="mainNavigation">
-            <nav role="navigation">
-              <div class="py-3 text-center border-bottom">
-                <img src="/static/images/logos/logo.png" width="150">
-              </div>
-            </nav>
-            <div class="navbar-expand-md">
-              <div class="navbar-dark text-center my-2">
-                <button class="navbar-toggler w-75 bg-primary bg-opacity-10 text-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
-                </button>
-              </div>
-              <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="register-page.html">Register</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="login-page.html">Login</a>
-                </li>
-          </ul>
-        </div>
+<body>
+  <div id="mainNavigation" class="container h-auto" >
+    <nav role="navigation">
+      <div class="py-3 text-center border-bottom">
+        <img src="/static/images/logos/logo.png" width="150">
       </div>
-      <div class="main-content">
-        <div class="left-container">
-            <div class="jumbotron">
-              <h1 class="display-1 fs-1">Pick your template</h1>
-              <p class="lead">and start creating</p>
-              <hr class="my-2">
-              <p class="text-muted">Create your own resume in less than fifteen minutes and go get your dream job</p>
-              <p class="lead">
-                <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=mCdA4bJAGGk" role="button">Click me!</a>
-              </p>
+    </nav>
+    <div class="navbar-expand-md opacity-75">
+      <div class="navbar-dark text-center my-2">
+        <button class="navbar-toggler w-75 bg-primary bg-opacity-10 text-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
+        </button>
+      </div>
+      <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register-page.html">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login-page.html">Login</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 mt-xl-3 mt-2" style="background-image: url(/static/images/background2.png);">
+              <div class="jumbotron">
+                <h1 class="display-1 fs-1">Pick your template</h1>
+                <p class="lead">and start creating</p>
+                <hr class="my-2">
+                <p class="text-muted">Create your own resume in less than fifteen minutes and go get your dream job</p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=mCdA4bJAGGk" role="button">Click me!</a>
+                </p>
+              </div>
+          </div>
+          <div class="col-xl-7 col-lg-6" style="background-image: url(/static/images/background2.png);">
+            <div id="template-carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#template-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-black bg-opacity-25" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#template-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-black bg-opacity-25" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-        </div>
-        <div class="right-container">
-          <div id="template-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#template-carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bg-black bg-opacity-25" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#template-carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon bg-black bg-opacity-25" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
       </div>
-      
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/static/css/home-page.js"></script>
 </body>
